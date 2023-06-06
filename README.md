@@ -1,5 +1,3 @@
-# shortest-path-between-cities
-
 # Introduction
 The utilization of a shortest path algorithm between two cities serves the crucial purpose of determining the most efficient route between them. By applying this algorithm, one can find the path with the minimum distance, time, or cost required to travel from the origin city to the destination city. This is particularly valuable in transportation planning, logistics management, and navigation systems, where it allows for optimized resource allocation, reduced travel time, and cost-effective decision-making. The algorithm's ability to identify the shortest path aids in enhancing efficiency, reducing fuel consumption, minimizing congestion, and ensuring timely deliveries. Moreover, it enables individuals to plan their journeys effectively, choose optimal routes, and make informed decisions regarding transportation options, resulting in improved overall transportation networks and enhanced user experiences.
 
@@ -29,17 +27,27 @@ using it.
 
 # Experiment for Algorithm 1
 Test Case 1 (Shortest Path Between Cities 1 and 3) ✔
+
 Input: N = 5,  connections = [[0,1,9],[0, 4, 2],[1,2,3],[1,4,4],[2,3,10],[3,2,6],[4,1,1], [4,2,8],[4,3,2]], i = 1, j = 3
+
 Expected Output:
+
 Minimum Cost = 6, Path = 1 -> 4 -> 3 
+
 Actual Output: 
+
 Minimum Cost = 6, Path = 1 -> 4 -> 3 
 
 Test Case 2 (Shortest Path Between Cities 4 and 2) ✔
+
 Input: N = 5,  connections = [[0,1,9],[0, 4, 2],[1,2,3],[1,4,4],[2,3,10],[3,2,6],[4,1,1], [4,2,8],[4,3,2]], i = 4, j = 2
+
 Expected Output:
+
 Minimum Cost = 4, Path = 4 -> 1 -> 2 
+
 Actual Output: 
+
 Minimum Cost = 4, Path = 4 -> 1 -> 2 
 
 # Algorithm 2
@@ -63,33 +71,61 @@ cost[i][j]).
 
 # Experiment for Algorithm 2
 Test Case 1 ✔
+
 In this test case, there is one important city k that is used in the order of 0, 1, 2, 3 for each
 two cities. There are 4 subsets of 3 shortest paths between two cities, where each subset
 has an important city k going in ascending order from 0 to 3.
+
 Input: [[0,I,-2,I],[4,0,3,I],[I,I,0,2],[I,-1,I,0]]
+
 Expected Output:
+
 Shortest Path between 0 and 1: 0 -> 2 -> 3 -> 1
+
 Shortest Path between 0 and 2: 0 -> 2
+
 Shortest Path between 0 and 3: 0 -> 2 -> 3
+
 Shortest Path between 1 and 0: 1 -> 0
+
 Shortest Path between 1 and 2: 1 -> 0 -> 2
+
 Shortest Path between 1 and 3: 1 -> 0 -> 2 -> 3
+
 Shortest Path between 2 and 0: 2 -> 3 -> 1 -> 0
+
 Shortest Path between 2 and 1: 2 -> 3 -> 1
+
 Shortest Path between 2 and 3: 2 -> 3
+
 Shortest Path between 3 and 0: 3 -> 1 -> 0
+
 Shortest Path between 3 and 1: 3 -> 1
+
 Shortest Path between 3 and 2: 3 -> 1 -> 0 -> 2
+
 Actual Output: 
+
 Shortest Path between 0 and 1: 0 -> 2 -> 3 -> 1
+
 Shortest Path between 0 and 2: 0 -> 2
+
 Shortest Path between 0 and 3: 0 -> 2 -> 3
+
 Shortest Path between 1 and 0: 1 -> 0
+
 Shortest Path between 1 and 2: 1 -> 0 -> 2
+
 Shortest Path between 1 and 3: 1 -> 0 -> 2 -> 3
+
 Shortest Path between 2 and 0: 2 -> 3 -> 1 -> 0
+
 Shortest Path between 2 and 1: 2 -> 3 -> 1
+
 Shortest Path between 2 and 3: 2 -> 3
+
 Shortest Path between 3 and 0: 3 -> 1 -> 0
+
 Shortest Path between 3 and 1: 3 -> 1
+
 Shortest Path between 3 and 2: 3 -> 1 -> 0 -> 2
